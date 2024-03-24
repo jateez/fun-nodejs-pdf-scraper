@@ -90,10 +90,6 @@ const downloadPDF = async (url) => {
     }
 }
 
-// Start scraping the first page
-const pageURL = "https://peraturan.go.id/uu?page=0";
-scraping(pageURL);
-
 // Iterate over additional pages and scrape them
 for (let i = 0; i < 88; i++) {
     const pageURL = `https://peraturan.go.id/uu?page=${i}`;
